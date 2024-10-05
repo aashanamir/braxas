@@ -1,0 +1,22 @@
+/* Base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", system-ui;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+.container{
+  width: 1200px;
+  max-width: 90%;
+  margin: auto;
+  height: fit-content;
+  overflow: hidden;
+  /* background-color: orange; */
+}

@@ -1,0 +1,142 @@
+/* Navbar container */
+
+nav{
+  background-color: red; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 4px;
+}
+
+.hamburger{
+  display: none;
+}
+
+.left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 78px;
+}
+
+
+/* Logo styling */
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 120px;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+}
+
+
+
+
+/* Navigation links */
+.navLinks {
+  display: flex;
+  list-style: none;
+}
+
+.navLinks li {
+  margin-left: 20px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navLinks a:hover {
+  opacity: 0.8;
+}
+
+.mobLinks {
+  display: none;
+  list-style: none;
+}
+
+
+/* Call to Action Button */
+.ctaButton a {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.ctaButton button:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+/* Media Queires */
+
+@media (max-width: 768px) {
+  .hamburger{
+    display: block;
+    position: relative;
+    font-size: 22px;
+  }
+  .left{
+    display: block;
+  }
+  .navLinks{
+    display: none;
+  }
+  .mobLinks{
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    background-color: white;
+    padding: 28px;
+    row-gap: 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobLinks li {
+    margin-left: 20px;
+  }
+  
+  .mobLinks a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .mobLinks a:hover {
+    opacity: 0.8;
+  }
+  
+}
+
+
+
+@media (max-width: 440px) {
+  .logo{
+    width: 100px;
+  }
+  .ctaButton a span{
+    display: none;
+  }
+  .hamburger{
+    font-size: 16px;
+  }
+}
