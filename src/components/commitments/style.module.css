@@ -1,0 +1,21 @@
+.container{
+  padding: 40px;
+  width: 100%;
+}
+
+.cardWrapper{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 48px 0;
+  /* background-color: red; */
+}
+
+@media screen and (max-width: 1025px){
+  .cardWrapper{
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+  
+}

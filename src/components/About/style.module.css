@@ -1,0 +1,7 @@
+.childDiv{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 48px 0;
+  flex-wrap: wrap;
+}
