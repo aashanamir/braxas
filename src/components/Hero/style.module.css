@@ -1,10 +1,9 @@
 .hero {
   height: 100vh;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   background-image: url('../../assets/hero.jfif');
-  /* Replace with your image URL */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -14,7 +13,7 @@
   text-align: center;
   color: white;
   padding: 40px;
-  background: rgba(209, 165, 165, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   width: 40vw;
   height: fit-content;
@@ -72,17 +71,23 @@ p {
 }
 
 /* Responsive design */
+
+@media (max-width: 1024px) {
+  .content {
+    width: 80vw;
+    background: rgba(8, 8, 8, 0.4);
+  }
+}
+
+
 @media (max-width: 768px) {
   .hero {
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
+    background-position: right;
 
-  .content {
-    width: 80vw;
-    background: rgba(8, 8, 8, 0.4);
-  }
+  } 
 
   h1 {
     font-size: 36px;
@@ -102,21 +107,49 @@ p {
   }
 }
 
-@media (max-width: 581px) {
-  .hero {
-    height: 130vh;
-  }
-
+@media (max-width: 640px) {
+ 
   .content {
     width: 90vw;
     background: rgba(8, 8, 8, 0.4);
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .buttons {
+    flex-direction: row;
+  }
+  .primaryButton,
+  .secondaryButton {
+    font-size: 8px;
+    width: fit-content;
   }
 }
+
+
+@media (max-width: 430px) {
+  .hero {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero {
+    height: 100vh;
+    padding: 20px;
+  }
+}
+
+
+@media (max-width: 270px) {
+  .hero {
+    height: 110vh;
+    padding: 10px;
+  }
+}
+

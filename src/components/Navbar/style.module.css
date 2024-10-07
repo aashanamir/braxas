@@ -87,7 +87,7 @@ nav{
 
 /* Media Queires */
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   .hamburger{
     display: block;
     position: relative;
