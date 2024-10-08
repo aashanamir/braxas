@@ -6,9 +6,11 @@ const HorezontalSection = ({ img, heading, children }) => {
   return (
     <div className={styles.container}>
       <img src={img} alt={heading} />
-      <div>
+      <div className={styles.content}>
         <SectionHeading text={heading} />
-        {children}
+        <div className={styles.children}>
+          {children}
+        </div>
       </div>
     </div>
   );

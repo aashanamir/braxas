@@ -1,0 +1,77 @@
+/* Main Footer Styling */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+}
+
+.column h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.column p, 
+.column ul {
+  font-size: 14px;
+  color: white;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 10px;
+}
+
+.column ul li a {
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.column ul li a:hover {
+  opacity: 0.7;
+}
+
+/* Subfooter Styling */
+.subfooter {
+  background-color: #222;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.subfooter p {
+  margin: 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .column {
+    max-width: 100%;
+  }
+}

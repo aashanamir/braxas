@@ -8,3 +8,28 @@
 .container img{
   width: 50%;
 }
+
+.content{
+  width: 50%;
+}
+
+.children{
+  width: 100%;
+  margin: auto;
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+  .container{
+    flex-direction: column;
+  }
+  .container img{
+    width: 100%;
+  }
+  .content{
+    width: 100%;
+    margin: auto;
+  }
+}
