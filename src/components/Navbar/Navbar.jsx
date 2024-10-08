@@ -4,6 +4,7 @@ import logo from "../../assets/logo.png";
 import { FaBars  } from "react-icons/fa";
 import { IoIosClose } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,19 +27,19 @@ const Navbar = () => {
           </div>
           <ul className={styles.navLinks}>
             <li>
-              <a href="#home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <a href="#services">Achievements</a>
+              <Link to="/acheivments">Achievments</Link>
             </li>
             <li>
-              <a href="#about">About Us</a>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
           <ul style={isOpen ? {display : "flex"} : {display : "none"}} className={styles.mobLinks}>

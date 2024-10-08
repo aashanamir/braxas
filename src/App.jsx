@@ -1,22 +1,24 @@
 import './App.css'
-import About from './components/About/About'
-import Commitments from './components/commitments/Commitments'
-import ContactSection from './components/Contact/Contact'
-import Footer from './components/Footer/Footer'
-import HeroSection from './components/Hero/Hero'
-import Navbar from './components/Navbar/Navbar'
+import {BrowserRouter , Route , Routes} from "react-router-dom";
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Services from './pages/Services/Services';
+import Acheivemnts from './pages/Acheivments/Acheivemnts';
+import Contact from './pages/Contact/Contact';
+
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <HeroSection/>
-      <Commitments/>
-      <About/>
-      <ContactSection/>
-      <About/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/services" element={<Services/>} />
+          <Route path="/acheivments" element={<Acheivemnts/>} />
+          <Route path="/contact" element={<Contact/>} />
+        </Routes>
+    </BrowserRouter>
+    
   )
 }
 
