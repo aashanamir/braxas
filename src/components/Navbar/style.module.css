@@ -2,13 +2,14 @@
 
 nav{
   background-color: red; 
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
+  max-width: 1200px;
+  margin: auto;
   z-index: 10000;
-  box-shadow: 0 0 10px rgba(255, 125, 125, 0.8);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  position: sticky;
+  top: 0;
 }
 
 .navbar {
