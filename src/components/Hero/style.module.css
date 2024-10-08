@@ -2,7 +2,6 @@
   margin-top: 70px;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   background-image: url('../../assets/hero.jfif');
   background-size: cover;
@@ -25,7 +24,7 @@
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 28px;
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -95,7 +94,7 @@ p {
   } 
 
   h1 {
-    font-size: 36px;
+    font-size: 20px;
   }
 
   p {
@@ -117,10 +116,6 @@ p {
   .content {
     width: 90vw;
     background: rgba(8, 8, 8, 0.4);
-  }
-
-  h1 {
-    font-size: 18px;
   }
 
   p {
