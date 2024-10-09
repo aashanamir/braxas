@@ -8,8 +8,8 @@ nav{
   z-index: 10000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  top: 0;
-  position: fixed;
+ position: sticky;
+ top: 0;
 }
 
 .navbar {
@@ -18,8 +18,8 @@ nav{
   align-items: center;
   color: white;
   padding: 4px;
-  position: relative;
-  top: 0;
+  /* position: relative;
+  top: 0; */
 }
 
 .hamburger{
