@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./style.module.css";
 import logo from "../../assets/logo.png";
-import { FaBars  } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { IoIosClose } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -15,11 +15,13 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={`container ${styles.navbar} fade-in-element`}>
-      <div className={styles.hamburger} onClick={toggleMenu}>
-        {
-          isOpen ? <IoIosClose size={34}  color="white" /> : <FaBars color="white" />
-        }
+      <div className={`container ${styles.navbar}`}>
+        <div className={styles.hamburger} onClick={toggleMenu}>
+          {isOpen ? (
+            <IoIosClose size={34} color="white" />
+          ) : (
+            <FaBars color="white" />
+          )}
         </div>
         <div className={`${styles.left}`}>
           <div className={styles.logo}>
@@ -42,27 +44,30 @@ const Navbar = () => {
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
-          <ul style={isOpen ? {display : "flex"} : {display : "none"}} className={styles.mobLinks}>
+          <ul
+            style={isOpen ? { display: "flex" } : { display: "none" }}
+            className={styles.mobLinks}
+          >
             <li>
-              <a href="#home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <a href="#services">Achievements</a>
+              <Link to="/acheivments">Achievments</Link>
             </li>
             <li>
-              <a href="#about">About Us</a>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
         <div className={styles.ctaButton}>
           <a href="tel:03066755577" className={styles.cta}>
-            <IoCall  />
+            <IoCall />
             <span>Call Now</span>
           </a>
         </div>

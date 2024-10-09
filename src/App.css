@@ -22,7 +22,7 @@ body {
 }
 
 
-.fade-in-element {
+.fade-in-elemen {
   opacity: 0; /* Start fully transparent */
   animation: fadeIn 1s forwards; /* Apply the animation */
 }

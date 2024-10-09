@@ -8,8 +8,8 @@ nav{
   z-index: 10000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  position: sticky;
   top: 0;
+  position: fixed;
 }
 
 .navbar {
@@ -18,6 +18,8 @@ nav{
   align-items: center;
   color: white;
   padding: 4px;
+  position: relative;
+  top: 0;
 }
 
 .hamburger{
@@ -74,6 +76,15 @@ nav{
 .mobLinks {
   display: none;
   list-style: none;
+  /* position: absolute; */
+  top: 60px;
+  left: 60px;
+  background-color: white;
+  padding: 8px;
+  row-gap: 18px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 
@@ -108,21 +119,14 @@ nav{
     display: none;
   }
   .mobLinks{
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    position: absolute;
-    top: 60px;
-    left: 60px;
-    background-color: white;
-    padding: 28px;
-    row-gap: 18px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+  
   }
 
   .mobLinks li {
-    margin-left: 20px;
+    margin-left: 10px;
+    font-size: 10px;
   }
   
   .mobLinks a {
