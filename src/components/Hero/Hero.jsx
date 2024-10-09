@@ -16,7 +16,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className={`${styles.hero} container`}>
+    <section className={`${styles.hero} container fade-in-element`}>
       <div className={styles.content}>
         <h1>Welcome To Yango Partner Braxas International</h1>
         <p>

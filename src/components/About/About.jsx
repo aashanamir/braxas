@@ -5,24 +5,6 @@ import Card from "../../utils/Card/Card";
 
 const About = () => {
 
-  /*  text={
-    "Experience unparalleled rides with Braxas International, the largest and most reliable Yango fleet in Lahore."
-  }
-
-   text={
-              "Partner with Braxas International, Lahore's exclusive Yango Fleet awarded Gold Status for excellence in service and safety."
-            }
-
-
-            text={
-              "Stand out on the road! With Braxas International, get free car and rickshaw branding that promotes your business."
-            }
-
-            text={
-              "Join a community of success! Braxas International supports over 10,000 captains, offering them the best earnings and opportunities."
-            }
-    
-  */
   return (
     <div className={`${styles.container} container`}>
       <HorezontalSection img={"/about.png"} heading={"Who We Are"}>

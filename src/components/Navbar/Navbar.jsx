@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={`container ${styles.navbar}`}>
+      <div className={`container ${styles.navbar} fade-in-element`}>
       <div className={styles.hamburger} onClick={toggleMenu}>
         {
           isOpen ? <IoIosClose size={34}  color="white" /> : <FaBars color="white" />

@@ -20,3 +20,20 @@ body {
   overflow: hidden;
   /* background-color: orange; */
 }
+
+
+.fade-in-element {
+  opacity: 0; /* Start fully transparent */
+  animation: fadeIn 1s forwards; /* Apply the animation */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0; /* Fully transparent */
+      transform: translateY(20px); /* Optional: Start slightly lower */
+  }
+  100% {
+      opacity: 1; /* Fully opaque */
+      transform: translateY(0); /* Move back to original position */
+  }
+}
