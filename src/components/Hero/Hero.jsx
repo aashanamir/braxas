@@ -18,9 +18,9 @@ const HeroSection = ({ image, heading, desc, btns }) => {
   return (
     <section
       style={{ backgroundImage: `url(${image})` }}
-      className={`${styles.hero} container fade-in-element`}
+      className={`${styles.hero}  fade-in-element`}
     >
-      <div className={styles.content}>
+      <div className={`${styles.content} container`}>
         <h1>{heading}</h1>
         <p>{desc}</p>
         {btns && (

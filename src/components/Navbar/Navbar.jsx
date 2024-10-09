@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`container ${styles.navbar}`}>
+    <nav className={`${styles.navbar}`}>
       <div className={`container ${styles.navbar}`}>
         <div className={styles.hamburger} onClick={toggleMenu}>
           {isOpen ? (

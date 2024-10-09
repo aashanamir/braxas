@@ -21,13 +21,13 @@ body {
 }
 
 
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
   .container{
-    max-width: 100%;
+    max-width: 90%;
     padding: 40px;
   }
   
-}
+} */
 
 .fade-in-elemen {
   opacity: 0; /* Start fully transparent */

@@ -3,9 +3,9 @@ import styles from './style.module.css';
 
 const Footer = () => {
   return (
-    <footer className={`${styles.footer} container`}>
+    <footer className={`${styles.footer}`}>
       {/* Main Footer Section */}
-      <div className={styles.footerContent}>
+      <div className={`${styles.footerContent} `}>
         <div className={styles.column}>
           <h4>About Us</h4>
           <p>
