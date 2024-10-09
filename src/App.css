@@ -13,14 +13,21 @@ body {
 
 
 .container{
-  width: 1200px;
+  width: 1300px;
   max-width: 90%;
   margin: auto;
   height: fit-content;
   overflow: hidden;
-  /* background-color: orange; */
 }
 
+
+@media screen and (max-width: 600px){
+  .container{
+    max-width: 100%;
+    padding: 40px;
+  }
+  
+}
 
 .fade-in-elemen {
   opacity: 0; /* Start fully transparent */

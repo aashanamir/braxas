@@ -2,8 +2,8 @@
 
 nav{
   background-color: red; 
-  width: 100%;
-  max-width: 1200px;
+  /* width: 100%;
+  max-width: 1200px; */
   margin: auto;
   z-index: 10000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
