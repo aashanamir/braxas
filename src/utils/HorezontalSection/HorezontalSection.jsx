@@ -4,7 +4,7 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 
 const HorezontalSection = ({ img, heading, children }) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} container`}>
       <img src={img} alt={heading} />
       <div className={styles.content}>
         <SectionHeading text={heading} />

@@ -3,7 +3,7 @@ import styles from './style.module.css';
 
 const ContactSection = () => {
   return (
-    <section className={styles.contactSection}>
+    <section className={`${styles.contactSection} container`}>
       <div className={styles.container}>
         {/* Contact Form */}
         <div className={styles.formContainer}>
