@@ -4,32 +4,55 @@ import HorezontalSection from "../../utils/HorezontalSection/HorezontalSection";
 import Card from "../../utils/Card/Card";
 
 const About = () => {
+
+  /*  text={
+    "Experience unparalleled rides with Braxas International, the largest and most reliable Yango fleet in Lahore."
+  }
+
+   text={
+              "Partner with Braxas International, Lahore's exclusive Yango Fleet awarded Gold Status for excellence in service and safety."
+            }
+
+
+            text={
+              "Stand out on the road! With Braxas International, get free car and rickshaw branding that promotes your business."
+            }
+
+            text={
+              "Join a community of success! Braxas International supports over 10,000 captains, offering them the best earnings and opportunities."
+            }
+    
+  */
   return (
     <div className={`${styles.container} container`}>
-      <HorezontalSection img={"/about.jfif"} heading={"Ride safe"}>
+      <HorezontalSection img={"/about.png"} heading={"Who We Are"}>
         <div className={`${styles.childDiv}`}>
           <Card
-            main={"Fixed prices"}
+
+            main={"Lahore's Premier Yango Fleet!"}
             text={
-              "Fixed prices for all trips. You know in advance how much you will pay."
+              "Best Yango fleet "
             }
+          
           />
           <Card
-            main={"Fixed prices"}
+            main={"Yango Gold Partner!"}
             text={
-              "Fixed prices for all trips. You know in advance how much you will pay."
+              "Officially Gold Status "
             }
+           
           />
           <Card
-            main={"Fixed prices"}
+            main={"We Brand Car & Rickshaw! Free"}
             text={
-              "Fixed prices for all trips. You know in advance how much you will pay."
+              "Free branding "
             }
+            
           />
           <Card
-            main={"Fixed prices"}
+            main={"10,000+ Happy Captains!"}
             text={
-              "Fixed prices for all trips. You know in advance how much you will pay."
+              "Most successful Captains"
             }
           />
         </div>

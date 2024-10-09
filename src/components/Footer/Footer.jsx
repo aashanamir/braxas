@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={styles.column}>
           <h4>About Us</h4>
           <p>
-          At Braxas International, we provide dedicated support to Yango captains—whether you drive a bike, car, or rickshaw. From seamless registration to 24/7 technical assistance, we ensure a smooth and profitable journey for all captains. Join us today and experience the best captain support services in the city.
+            At Braxas International, we provide dedicated support to Yango captains—whether you drive a bike, car, or rickshaw.
           </p>
         </div>
         <div className={styles.column}>
@@ -25,6 +25,11 @@ const Footer = () => {
           <h4>Contact Us</h4>
           <p>Email: info@braxasinternational.com</p>
           <p>Phone: 0306 6755577</p>
+        </div>
+        <div className={styles.column}>
+          <h4>Office Timings</h4>
+          <p>Monday - Staurday: 10 AM - 8 PM</p>
+          <p>Sunday: Closed</p>
         </div>
       </div>
 
