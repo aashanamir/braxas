@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "../../components/Navbar/Navbar";
 import HeroSection from '../../components/Hero/Hero';
-import Image from "../../assets/services.jfif";
+import Image from "../../assets/services.webp";
 import Footer from '../../components/Footer/Footer';
 import Commitments from '../../components/commitments/Commitments';
 

@@ -6,6 +6,7 @@ import About from "../../components/About/About";
 import Commitments from "../../components/commitments/Commitments";
 import HeroSection from "../../components/Hero/Hero";
 import heroImage from "../../assets/hero.jfif";
+import Achievements from "../../components/Achievements/Achievements";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       />
       <Commitments />
       <About />
+      <Achievements />
       <ContactSection />
       <Footer />
     </div>
