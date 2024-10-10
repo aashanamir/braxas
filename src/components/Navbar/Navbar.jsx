@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./style.module.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.webp";
 import { FaBars } from "react-icons/fa";
 import { IoIosClose } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
