@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import LoadingEffect from "../../components/LoadingEffect/LoadingEffect";
-import heroImage from "../../assets/hero.jfif";
+import heroImage from "../../assets/hero.webp";
 import RegistrationProcess from "../../components/RegistrationProcess/RegistrationProcess";
 
 // Lazily import components
