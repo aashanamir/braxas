@@ -1,0 +1,93 @@
+/* Main container for the registration process */
+.registrationProcess {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  position: relative;
+}
+
+/* Step container with icon, content, and arrow */
+.stepContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.stepContainer:hover {
+  transform: scale(1.05); /* Slight hover effect */
+}
+
+/* Icon container for each step */
+.iconContainer {
+  background-color: red; /* Brand color */
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Step content styling */
+.stepContent h2 {
+  color: red; /* Step number color */
+  font-size: 24px;
+}
+
+.stepContent h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.stepContent p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Arrow styling for connecting steps */
+.arrow {
+  margin-top: 20px;
+  font-size: 40px;
+  color: red;
+}
+
+/* Responsive Layout for Tablets and Mobile */
+@media (max-width: 1024px) {
+  .registrationProcess {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stepContainer {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
+
+  .arrow {
+    display: none; /* Hide arrows on mobile view */
+  }
+}
+
+@media (max-width: 768px) {
+  .stepContent h2 {
+    font-size: 20px;
+  }
+
+  .stepContent h3 {
+    font-size: 18px;
+  }
+
+  .stepContent p {
+    font-size: 14px;
+  }
+}

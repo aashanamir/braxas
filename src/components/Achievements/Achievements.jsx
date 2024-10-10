@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './style.module.css';
-import { FaTrophy, FaUsers, FaProjectDiagram, FaAward } from 'react-icons/fa';  // React icons
+import { FaTrophy, FaUsers, FaProjectDiagram, FaAward } from 'react-icons/fa';
 
 const Achievements = () => {
   return (
@@ -15,7 +15,7 @@ const Achievements = () => {
           </div>
           <div className={styles.achievement}>
             <FaUsers className={styles.icon} />
-            <h3>500+ Happy Clients</h3>
+            <h3>10000+ Happy Clients</h3>
             <p>Providing top-notch support and services to captains across the city.</p>
           </div>
           <div className={styles.achievement}>

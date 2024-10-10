@@ -1,32 +1,40 @@
-import React from "react";
-import Footer from "../../components/Footer/Footer";
-import ContactSection from "../../components/Contact/Contact";
-import Navbar from "../../components/Navbar/Navbar";
-import About from "../../components/About/About";
-import Commitments from "../../components/commitments/Commitments";
-import HeroSection from "../../components/Hero/Hero";
+import React, { Suspense, lazy } from "react";
+import LoadingEffect from "../../components/LoadingEffect/LoadingEffect";
 import heroImage from "../../assets/hero.jfif";
-import Achievements from "../../components/Achievements/Achievements";
+import RegistrationProcess from "../../components/RegistrationProcess/RegistrationProcess";
+
+// Lazily import components
+const Navbar = lazy(() => import("../../components/Navbar/Navbar"));
+const HeroSection = lazy(() => import("../../components/Hero/Hero"));
+const Commitments = lazy(() => import("../../components/commitments/Commitments"));
+const About = lazy(() => import("../../components/About/About"));
+const Achievements = lazy(() => import("../../components/Achievements/Achievements"));
+const ContactSection = lazy(() => import("../../components/Contact/Contact"));
+const Footer = lazy(() => import("../../components/Footer/Footer"));
+
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
-      <HeroSection
-        image={heroImage}
-        heading={"Welcome To Yango Partner Braxas International"}
-        desc={`At Braxas International, we provide dedicated support to Yango
+      <Suspense fallback={<LoadingEffect />}>
+        <Navbar />
+        <HeroSection
+          image={heroImage}
+          heading={"Welcome To Yango Partner Braxas International"}
+          desc={`At Yango Partner Braxas International, we provide dedicated support to Yango
           captains—whether you drive a bike, car, or rickshaw. From seamless
           registration to 24/7 technical assistance, we ensure a smooth and
           profitable journey for all captains. Join us today and experience the
           best captain support services in the city.`}
           btns={true}
-      />
-      <Commitments />
-      <About />
-      <Achievements />
-      <ContactSection />
-      <Footer />
+        />
+        <Commitments />
+        <About />
+        <Achievements />
+        <ContactSection />
+        <RegistrationProcess/>
+        <Footer />
+      </Suspense>
     </div>
   );
 };
