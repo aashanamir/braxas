@@ -1,28 +1,96 @@
-import React from 'react';
-import styles from './style.module.css';
+import React, { useState } from "react";
+import styles from "./style.module.css";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const ContactSection = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
+
+  const handleSubmit = async (e) => {
+    try {
+      const { data } = await axios.post(
+        "http://localhost:5000/api/v1/message/send",
+        {
+          name,
+          email,
+          phone,
+          message,
+        }
+      );
+
+      toast.success("Message sent successfully");
+      setName("");
+      setEmail("");
+      setMessage("");
+      setPhone("");
+      
+    } catch (error) {
+      console.log(error);
+      
+    }
+  };
+
   return (
     <section className={`${styles.contactSection} container`}>
       <div className={styles.container}>
         {/* Contact Form */}
         <div className={styles.formContainer}>
           <h2>Contact Us</h2>
-          <form className={styles.contactForm}>
+          <div className={styles.contactForm}>
             <div className={styles.inputGroup}>
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" required />
+              <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div className={styles.inputGroup}>
+              <label htmlFor="phone">Phone</label>
+              <input
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+              />
             </div>
             <div className={styles.inputGroup}>
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" required />
+              <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                id="email"
+                name="email"
+              />
             </div>
             <div className={styles.inputGroup}>
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
+              <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
             </div>
-            <button type="submit" className={styles.submitButton}>Send Message</button>
-          </form>
+            <button
+              onClick={handleSubmit}
+              type="submit"
+              className={styles.submitButton}
+            >
+              Send Message
+            </button>
+          </div>
         </div>
 
         {/* Google Map */}
