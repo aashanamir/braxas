@@ -18,7 +18,7 @@ const ContactSection = () => {
           email,
           phone,
           message,
-        }
+        },{ headers: { "Content-Type": "application/json" } }
       );
 
       toast.success("Message sent successfully");
