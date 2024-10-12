@@ -6,12 +6,15 @@ import RegistrationProcess from "../../components/RegistrationProcess/Registrati
 // Lazily import components
 const Navbar = lazy(() => import("../../components/Navbar/Navbar"));
 const HeroSection = lazy(() => import("../../components/Hero/Hero"));
-const Commitments = lazy(() => import("../../components/commitments/Commitments"));
+const Commitments = lazy(() =>
+  import("../../components/commitments/Commitments")
+);
 const About = lazy(() => import("../../components/About/About"));
-const Achievements = lazy(() => import("../../components/Achievements/Achievements"));
+const Achievements = lazy(() =>
+  import("../../components/Achievements/Achievements")
+);
 const ContactSection = lazy(() => import("../../components/Contact/Contact"));
 const Footer = lazy(() => import("../../components/Footer/Footer"));
-
 
 const Home = () => {
   return (
@@ -28,11 +31,13 @@ const Home = () => {
           best captain support services in the city.`}
           btns={true}
         />
+
         <Commitments />
         <About />
         <Achievements />
         <ContactSection />
-        <RegistrationProcess/>
+        <RegistrationProcess />
+        
         <Footer />
       </Suspense>
     </div>

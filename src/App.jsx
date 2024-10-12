@@ -18,6 +18,17 @@ function App() {
         <Route path="/acheivments" element={<Acheivemnts />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <img
+          onClick={() => {
+            window.open(
+              "https://api.whatsapp.com/send/?phone=923066755577&text=mujhy+guidenece+Chahiye+hy+help+me&type=phone_number&app_absent=0",
+              "_blank"
+            );
+          }}
+          className="whatsapp-icon"
+          src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png"
+          alt=""
+        />
       <ToastContainer
         position="bottom-left"
         autoClose={5000}

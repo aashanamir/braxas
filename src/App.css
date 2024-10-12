@@ -21,6 +21,19 @@ body {
 }
 
 
+.whatsapp-icon{
+  position: fixed;
+  bottom: 40px;
+  right: 60px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.whatsapp-icon:hover{
+  transform: scale(1.4);
+}
+
 /* @media screen and (max-width: 600px){
   .container{
     max-width: 90%;
@@ -33,6 +46,9 @@ body {
   opacity: 0; /* Start fully transparent */
   animation: fadeIn 1s forwards; /* Apply the animation */
 }
+
+
+
 
 @keyframes fadeIn {
   0% {
