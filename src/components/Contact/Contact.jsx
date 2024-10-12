@@ -12,7 +12,7 @@ const ContactSection = () => {
   const handleSubmit = async (e) => {
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/v1/message/send",
+        "https://braxas-portal.vercel.app/api/v1/message/send",
         {
           name,
           email,
