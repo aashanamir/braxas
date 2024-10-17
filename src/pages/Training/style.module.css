@@ -1,0 +1,143 @@
+/* Main Container */
+.container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  width: 100%;
+  background-color: #000;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 250px;
+    height: fit-content;
+  }
+}
+
+.sidebarTitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ecf0f1;
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarItem {
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #ecf0f1;
+}
+
+.sidebarItem:hover,
+.active {
+  background-color: red;
+  border-radius: 5px;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding: 40px;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Responsive Video */
+.video {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 60vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(162, 162, 162, 0.1);
+  background-color: #000;
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  .video {
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .video {
+    max-height: 40vh;
+  }
+}
+
+/* Navigation Buttons */
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.navButton {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: #e64a19;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+
+.description{
+  margin-top: 18px;
+  color: #979797;
+}

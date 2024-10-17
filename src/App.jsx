@@ -7,16 +7,18 @@ import Acheivemnts from "./pages/Acheivments/Acheivemnts";
 import Contact from "./pages/Contact/Contact";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import TrainingPage from "./pages/Training/Training";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/*" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/acheivments" element={<Acheivemnts />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/training" element={<TrainingPage />} />
       </Routes>
       <img
           onClick={() => {
