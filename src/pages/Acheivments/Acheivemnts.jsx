@@ -4,10 +4,14 @@ import AcheivemntSection from "../../components/Achievements/Achievements";
 import Image from "../../assets/acheivements.webp";
 import HeroSection from "../../components/Hero/Hero";
 import Footer from "../../components/Footer/Footer";
+import { Helmet } from "react-helmet";
 
 const Acheivemnts = () => {
   return (
     <div>
+      <Helmet>
+        <title>Acheivements | Yango Partner Braxas Inernational</title>
+      </Helmet>
       <Navbar />
       <HeroSection
         image={Image}
