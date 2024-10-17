@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /training 
+Allow: /about
+Allow: /acheivments
+Allow: /services
+Allow: /contact
