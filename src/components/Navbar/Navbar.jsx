@@ -24,9 +24,9 @@ const Navbar = () => {
           )}
         </div>
         <div className={`${styles.left}`}>
-          <div className={styles.logo}>
+          <Link to={"/"} className={styles.logo}>
             <img src={logo} alt="Company Logo" />
-          </div>
+          </Link>
           <ul className={styles.navLinks}>
             <li>
               <Link to="/">Home</Link>
@@ -61,6 +61,9 @@ const Navbar = () => {
               <Link to="/acheivments">Achievments</Link>
             </li>
             <li>
+              <Link to="/training">Training</Link>
+            </li>
+            <li> 
               <Link to="/about">About</Link>
             </li>
             <li>
