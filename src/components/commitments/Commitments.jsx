@@ -6,7 +6,7 @@ import Card from "../../utils/Card/Card";
 const Commitments = () => {
   return (
     <div className={`${styles.container} container`}>
-      <SectionHeading text={"Why Register With Braxas International"} />
+      <SectionHeading text={"Why Register With Yango Partner Braxas International"} />
       <div className={`${styles.cardWrapper}`}>
         <Card
           img={"/service-1.png"}

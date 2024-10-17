@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={styles.column}>
           <h4>About Us</h4>
           <p>
-            At Braxas International, we provide dedicated support to Yango captains—whether you drive a bike, car, or rickshaw.
+            At Yango Partner Braxas International, we provide dedicated support to Yango captains—whether you drive a bike, car, or rickshaw.
           </p>
         </div>
         <div className={styles.column}>
@@ -36,7 +36,7 @@ const Footer = () => {
 
       {/* Subfooter Section */}
       <div className={styles.subfooter}>
-        <p>&copy; {new Date().getFullYear()} Braxas International. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Yango Partner Braxas International. All Rights Reserved.</p>
       </div>
     </footer>
   );
