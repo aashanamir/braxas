@@ -176,6 +176,10 @@ const TrainingPage = () => {
         <title>
           Complete Captain Training | Yango Partner Braxas Inernational
         </title>
+        <meta
+          name="description"
+          content="At Yango Partner Braxas International, we believe in empowering our captains with the right skills and knowledge. Our comprehensive training programs are designed to help you excel in every aspect of your journey with Yango, whether you're a new captain or looking to enhance your performance."
+        />
       </Helmet>
       <Navbar />
 
