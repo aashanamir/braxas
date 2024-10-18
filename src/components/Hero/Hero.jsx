@@ -7,7 +7,20 @@ const HeroSection = ({ image, heading, desc, btns }) => {
 
     link.setAttribute(
       "href",
-      `https://wa.me/923066755577?text=mujhy%20register%20krna%20hy%20help%20me`
+      `https://whatsapp.com/channel/0029VaJQHq4GU3BJxpytSA1F`
+    );
+
+    link.setAttribute("target", "_blank");
+
+    link.click();
+  };
+
+  const getStartedHandler = () => {
+    const link = document.createElement("a");
+
+    link.setAttribute(
+      "href",
+      `https://fleet.yandex.com/financial-statements?park_id=dc50a45e617c4dc489f9776f54516841`
     );
 
     link.setAttribute("target", "_blank");
@@ -25,12 +38,17 @@ const HeroSection = ({ image, heading, desc, btns }) => {
         <p>{desc}</p>
         {btns && (
           <div className={styles.buttons}>
-            <button className={styles.primaryButton}>Get Started</button>
+            <button
+              onClick={getStartedHandler}
+              className={styles.primaryButton}
+            >
+              Get Started
+            </button>
             <button
               onClick={learnMoreHandler}
               className={styles.secondaryButton}
             >
-              Learn More
+              Whatsapp Channel
             </button>
           </div>
         )}
