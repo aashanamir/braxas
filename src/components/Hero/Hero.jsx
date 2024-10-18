@@ -20,7 +20,7 @@ const HeroSection = ({ image, heading, desc, btns }) => {
 
     link.setAttribute(
       "href",
-      `https://fleet.yandex.com/financial-statements?park_id=dc50a45e617c4dc489f9776f54516841`
+      `https://forms.fleet.yango.com/forms?ref_id=ca7509a4416648f4ada29f3f00be9441`
     );
 
     link.setAttribute("target", "_blank");
